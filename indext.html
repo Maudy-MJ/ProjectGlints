@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Miaw</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+    body{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+        }
+        label {
+            position: absolute;
+            width: 50px;
+            height: 25px;
+            right: 30px;
+            top: 20px;
+            border: 5px solid;
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+        label:before{
+            position: absolute;
+            content: '';
+            width:50px;
+            height: 25px;
+            margin-left: 5px;
+            margin-top: 5px;
+            border-radius: 25%;
+            background: #000;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .label.active:before{
+            left: 25px;
+            background: #fff;
+        }
+        
+        body.night{
+            background: #000;
+            color: #fff;
+        }
+  </style>
+</head>
+<div class="header">
+  <div class="header-logo">Miauw</div>
+<div class="header-list">
+    <a href="#" class="login">Home</a>
+    <a href="#" class="login">About Us</a>
+    <a href="#" class="login">Contact</a>
+</div>
+</div>
+<body class="night">
+    <label class="dark-chance" class="active">
+    </label>
+  </header>
+</body>
+<body>
+  <header>
+    <label id="dark-change" class>
+    </label>
+  </header>
+  <script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+        darkMode.classList.toggle('active');
+        content.classList.toggle('night');
+    })
+  </script>
+    </header>
+    <div class="main">
+      <div class="copy-container">
+        <h1>Hi Everyone,</h1>
+        <h2>Welcome to my <span>Website</span></h2>
+        <h3>In here,I wan to give you something to see</h3>
+      </div> 
+      <div class="contents">
+       <div class="section-tittle">
+        <p>I really love my cats, do you want to see them?</p>
+        <a href="#" class="btn-wrapper">yes, I am</a>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <p>My Cats</p>
+        </div>
+
+        <div class="lessons">
+            <div class="lesson-item">
+              <img src="cute-black-and-white-cat-1200x675 1.png">
+            </div>
+            <div class="lesson-item">
+              <img src="cute 1.png">
+            </div>
+          <div class="lesson">
+            <div class="lesson-item ">
+              <img src="images 1.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+        <h2>Please tell my cat how adorable they are</h2>
+    </div>
+    <div class="form-input">
+        <p>Name:</p>
+        <input>
+        <p>Email:</p>
+        <textarea></textarea>
+        <input class="contact-submit" type="submit" value="Send">
+    </div>
+    </div>
+  <footer>
+    <div class="footer">
+      <div class="footer-logo">GM-Mas Fariz</div>
+      <div class="footer-list">
+        <a href="#" class="About">About</a>
+        <a href="#" class="Career">Career</a>
+        <a href="#" class="Contact Us">Contact Us</a>
+      </div>
+    </div>
+  </body>
+</html>
